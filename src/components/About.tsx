@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, Award, Users, Lightbulb } from 'lucide-react';
-
+import './Main.css'
 const About = () => {
   const values = [
     {
@@ -26,18 +26,18 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="mt-8 py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl font-playfair md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
             About Us
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1  mx-auto mb-8"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            <h3 className=" font-playfair text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               Building Dreams, Crafting Spaces
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -72,8 +72,8 @@ const About = () => {
               key={index}
               className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center group"
             >
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors duration-300">
-                <value.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
+              <div className=" button-gold-border button-gold-border:hover .border-gold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 transition-colors duration-300">
+                <value.icon className="h-8 w-8 group-hover:text-white transition-colors duration-300" />
               </div>
               <h4 className="text-xl font-bold text-gray-800 mb-4">{value.title}</h4>
               <p className="text-gray-600 leading-relaxed">{value.description}</p>

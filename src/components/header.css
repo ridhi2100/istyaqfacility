@@ -1,0 +1,26 @@
+/* Header.css */
+.header-custom {
+  background-color: #b59e6f;
+  transition: background-color 0.3s ease;
+}
+
+.header-custom:hover {
+  background-color: white;
+}
+
+.header-custom a,
+.header-custom button,
+.header-custom h1,
+.header-custom p,
+.header-custom svg {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header-custom:hover a,
+.header-custom:hover button,
+.header-custom:hover h1,
+.header-custom:hover p,
+.header-custom:hover svg {
+  color: #b59e6f;
+}
